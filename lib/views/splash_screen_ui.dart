@@ -2,7 +2,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_application_login/views/login_4_ui.dart';
-import 'package:flutter_application_login/views/login_ui.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class SplashScreenUI extends StatefulWidget {

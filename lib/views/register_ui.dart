@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_login/views/login_4_ui.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class RegisterUI extends StatefulWidget {
@@ -17,6 +18,30 @@ class _RegisterUIState extends State<RegisterUI> {
         child: Center(
           child: Column(
             children: [
+              Padding(
+                padding: EdgeInsets.only(
+                  left: MediaQuery.of(context).size.width * 0.05,
+                  top: MediaQuery.of(context).size.width * 0.129,
+                ),
+                child: Row(
+                  children: [
+                    IconButton(
+                      onPressed: () {
+                        Navigator.pop(context);
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => Login4UI(),
+                          ),
+                        );
+                      },
+                      icon: Icon(
+                        Icons.arrow_back_ios,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
               Padding(
                 padding: EdgeInsets.only(
                   right: MediaQuery.of(context).size.width * 0.1,

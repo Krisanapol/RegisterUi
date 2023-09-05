@@ -22,30 +22,6 @@ class _Login4UIState extends State<Login4UI> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
-              Padding(
-                padding: EdgeInsets.only(
-                  left: MediaQuery.of(context).size.width * 0.05,
-                  top: MediaQuery.of(context).size.width * 0.129,
-                ),
-                child: Row(
-                  children: [
-                    IconButton(
-                      onPressed: () {
-                        Navigator.pop(context);
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => Login4UI(),
-                          ),
-                        );
-                      },
-                      icon: Icon(
-                        Icons.arrow_back_ios,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
               SizedBox(
                 height: MediaQuery.of(context).size.width * 0.055,
               ),
